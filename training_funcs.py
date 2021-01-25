@@ -31,22 +31,4 @@ def get_weighted_loss(weights):
 
 if __name__=="__main__":
     pass
-    # %load_ext tensorboard
-    # # Clear any logs from previous runs
-    # !rm -rf ./logs/
-    #
-    #
-    # %tensorboard --logdir logs/scalars
-
-    #Model
-
-
-    # logdir = "logs/scalars/" + datetime.now().strftime("%Y%m%d-%H%M%S")
-    # tensorboard = tf.keras.callbacks.TensorBoard(log_dir=logdir)
-    #
-    # cbs=[tensorboard,tf.keras.callbacks.ModelCheckpoint('gdrive/My Drive/project/bin_acc5_4CLASSES.hdf5', save_weights_only=True, monitor='val_accuracy_score', mode='max', save_best_only=True,),
-    #      tf.keras.callbacks.ModelCheckpoint('gdrive/My Drive/project/prec5_4CLASSES.hdf5', save_weights_only=True, monitor='val_precision', mode='max', save_best_only=True),
-    #      tf.keras.callbacks.ModelCheckpoint('gdrive/My Drive/project/loss5_4CLASSES.hdf5', save_weights_only=True, monitor='val_loss', mode='min', save_best_only=True)]
-    #
-    # history = model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, verbose=2, validation_data=(x_val, y_val),callbacks=cbs,shuffle=True,class_weight={0:class_weights[0],1:class_weights[1],2:class_weights[2],3:class_weights[3]})
-
+    
